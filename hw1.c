@@ -30,6 +30,11 @@
 //     char cc1, cc2; // 입력받은 숫자에서 연월일을 구분하기 위한 "/" 를 저장하기 위함.
 //     scanf("%d%c%d%c%d", &y,&cc1,&m,&cc2,&d); // 구분자 "/" 를 cc1,cc2 에 저장.
 
+//	   scanf("%d%*c%d%*c%d", &y, &m, &d);	<------- %*c 란? 문자형을 입력 받되 저장하지 않는다. 무시하라. 
+// 	   |__ > 굳이 scanf 쓰면서 문자를 입력받기 위한 char cc1, cc2 를 쓸 필요가 없다.
+
+
+
 //     printf("Today's date is %d year %d month %d day.",y,m,d);
 // }
 
@@ -59,9 +64,15 @@
 // }
 
 // p.4
+//     문제에는 매크로 상수를 사용하라고 했음.
+//     #define Base rate 390
+// 	   #define Usagefee 57.3
+// 	   #define VAT 10.0
+
 
 // int main(void){
-    
+
+
 //     int usage;
 
 //     printf("Electricity usage (kw) : ");
