@@ -64,18 +64,6 @@ int main(void){
 
     // printf("%d / %d = %d ... \n", a,b,res);
   
-
-    int a, b, res, rem;
-    printf("두 정수 입력 : ");
-    scanf_s("%d %d ", &a,&b);
-
-    res = DIV(&a,&b, &rem);
-
-
-
-    printf("%d / %d = %d ... %d ",a,b,res, *rem);
-
-    return 0;
 }
 
 int DIV(int *pa, int *pb){

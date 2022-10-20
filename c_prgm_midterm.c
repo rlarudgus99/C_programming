@@ -98,16 +98,55 @@ typedef unsigned int size_T;
 //     return 0;
 // }
 
-int main(void){
-    int arr[5] = {10,20,30,40,50};
-    // printf("%d %d", *arr, arr[0]);
+// int main(void){
+//     int arr[5] = {10,20,30,40,50};
+//     // printf("%d %d", *arr, arr[0]);
     
-    // int*pArr = arr;
-    int *pArr;
-    pArr = &arr[1];
+//     // int*pArr = arr;
+//     int *pArr;
+//     pArr = &arr[1];
 
-    printf("%d %d",arr[0],pArr[-1]);
-    printf("%d %d", arr[1], pArr[0]);
+//     printf("%d %d",arr[0],pArr[-1]);
+//     printf("%d %d", arr[1], pArr[0]);
     
-    return 0;
+//     return 0;
+// }
+
+// int main(void){
+//     int a = 0;
+
+//     printf("%d",a += 6);
+//     printf("a : %d",a);
+//     return 0;
+// }
+
+// int a = 10, b = 20;
+
+// void SWAP(int, int);
+
+// int main(void){
+//     printf("호출 전 : a = %d, b = %d", a,b);
+//     SWAP(a,b);
+//     printf("호출 후 : a = %d, b = %d",a,b);
+
+//     return 0;
+// }
+
+// void SWAP(int a, int b){
+//     int temp;
+
+//     temp = a;
+//     a = b;
+//     b = temp;
+    
+//     return;
+// }
+
+
+int main(void){
+    int  i =0;
+    int *p = &i;
+
+    printf("%d \n",((*p)++));
+    printf("%d",(*p));
 }
